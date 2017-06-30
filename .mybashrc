@@ -10,6 +10,7 @@ export JAVA_HOME PATH PERL5LIB GOPATH GOROOT PYDEVDIR
 
 # my alias
 alias myflask='. ~/dev/env/python/flask/bin/activate'
+alias mypi='. ~/dev/env/python/pi/bin/activate'
 alias apt='sudo /usr/bin/apt'
 alias nginx='sudo nginx'
 alias tmux='tmux -2'
