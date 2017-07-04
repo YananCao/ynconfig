@@ -15,6 +15,7 @@ alias apt='sudo /usr/bin/apt'
 alias nginx='sudo nginx'
 alias tmux='tmux -2'
 alias emptycache='sudo sh -c "free && sync && echo 3 > /proc/sys/vm/drop_caches && free"'
+alias myhosts='sudo sh ~/git/ynconfig/host_conf.sh'
 
 #code comment
 alias author='bash $HOME/dev/template/author.sh'
