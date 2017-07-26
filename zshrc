@@ -7,6 +7,7 @@
 # PERL5LIB=~/Desktop/perl/mylib:$PERL5LIB
 # PYDEVDIR=$HOME/dev/ide/workspaces/pycharm
 export JAVA_HOME PATH PERL5LIB GOPATH GOROOT PYDEVDIR
+export VISUAL='vim'
 
 # my alias
 alias myflask='. ~/dev/env/python/flask/bin/activate'
@@ -18,7 +19,8 @@ alias emptycache='sudo sh -c "free && sync && echo 3 > /proc/sys/vm/drop_caches 
 alias myhosts='sudo sh ~/git/ynconfig/host_conf.sh'
 alias python=python2
 alias pip=pip2
-alias hosts='wget https://raw.githubusercontent.com/racaljk/hosts/master/hosts -O hosts_tmp && cat ~/git/ynconfig/hosts_t540p hosts_tmp > hosts_tmp2 && sudo cp hosts_tmp2 /etc/hosts && rm hosts_tmp hosts_tmp2'
+# alias hosts='wget https://raw.githubusercontent.com/racaljk/hosts/master/hosts -O hosts_tmp && cat ~/git/ynconfig/hosts_t540p hosts_tmp > hosts_tmp2 && sudo cp hosts_tmp2 /etc/hosts && rm hosts_tmp hosts_tmp2'
+alias hosts='wget https://raw.githubusercontent.com/racaljk/hosts/master/hosts -O hosts_tmp && cat ~/git/ynconfig/hosts_t420 hosts_tmp > hosts_tmp2 && sudo cp hosts_tmp2 /etc/hosts && rm hosts_tmp hosts_tmp2'
 
 #code comment
 # alias author='bash $HOME/dev/template/author.sh'
