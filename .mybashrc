@@ -24,3 +24,10 @@ alias copyright='bash $HOME/dev/template/copyright.sh'
 #
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
+# bash history config
+# 忽略特定命令
+HISTIGNORE="[   ]*:ls:ll:cd:vi:pwd:sync:exit:history*"
+# 历史文件大小 10m
+HISTFILESIZE=1000000000
+# 保存历史命令条数 10w
+HISTSIZE=1000000
