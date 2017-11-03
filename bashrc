@@ -1,9 +1,11 @@
 #! /bin/bash
 GOROOT=$HOME/dev/lang/go/goroot
 GOPATH=$HOME/dev/lang/go/workspace
-JAVA_HOME=~/dev/env/jdk1.7.0_55
+# JAVA_HOME=~/dev/env/jdk1.7.0_55
+JAVA_HOME=~/dev/env/jdk1.8.0_101
 CLASS_PATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
-PATH=$JAVA_HOME/bin:$PATH:/usr/lib/go-1.7/bin:$GOROOT/bin:$GOPATH/bin
+MAVEN_HOME=~/dev/tools/apache-maven-3.3.3
+PATH=$JAVA_HOME/bin:$PATH:/usr/lib/go-1.7/bin:$GOROOT/bin:$GOPATH/bin:$MAVEN_HOME/bin
 PERL5LIB=~/Desktop/perl/mylib:$PERL5LIB
 PYDEVDIR=$HOME/dev/ide/workspaces/pycharm
 export JAVA_HOME PATH PERL5LIB GOPATH GOROOT PYDEVDIR
@@ -12,6 +14,7 @@ export JAVA_HOME PATH PERL5LIB GOPATH GOROOT PYDEVDIR
 alias cl=clear
 alias crapidoc='apidoc -i app/ -o apidoc/'
 alias myflask='. ~/dev/env/python/flask/bin/activate'
+alias myflask-common='. ~/dev/env/python/flask_common/bin/activate'
 alias mypi='. ~/dev/env/python/pi/bin/activate'
 alias apt='sudo /usr/bin/apt'
 alias nginx='sudo nginx'
