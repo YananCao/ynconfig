@@ -15,6 +15,7 @@ alias cl=clear
 alias crapidoc='apidoc -i app/ -o apidoc/'
 alias myflask='. ~/dev/env/python/flask/bin/activate'
 alias myflask-common='. ~/dev/env/python/flask_common/bin/activate'
+alias myflask-base='. ~/dev/env/python/flask-base/bin/activate'
 alias mypi='. ~/dev/env/python/pi/bin/activate'
 alias apt='sudo /usr/bin/apt'
 alias nginx='sudo nginx'
