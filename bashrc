@@ -10,7 +10,7 @@ PATH=$JAVA_HOME/bin:$PATH:/usr/lib/go-1.7/bin:$GOROOT/bin:$GOPATH/bin:$MAVEN_HOM
 PATH=$PATH:$ANDROID_HOME/tools
 PERL5LIB=~/Desktop/perl/mylib:$PERL5LIB
 PYDEVDIR=$HOME/dev/ide/workspaces/pycharm
-export JAVA_HOME PATH PERL5LIB GOPATH GOROOT PYDEVDIR
+export JAVA_HOME PATH PERL5LIB GOPATH GOROOT PYDEVDIR ANDROID_HOME
 
 # my alias
 alias cl=clear
