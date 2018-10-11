@@ -1,16 +1,19 @@
 #! /bin/bash
-GOROOT=$HOME/dev/lang/go/goroot
-GOPATH=$HOME/dev/lang/go/workspace
+#GOROOT=$HOME/dev/env/go-go1.10.3
+GOROOT=$HOME/dev/env/go-go1.11.1
+GOPATH=$HOME/dev/lang/go/gopath
 # JAVA_HOME=~/dev/env/jdk1.7.0_55
 JAVA_HOME=~/dev/env/jdk1.8.0_101
 CLASS_PATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 MAVEN_HOME=~/dev/tools/apache-maven-3.3.3
 ANDROID_HOME=~/dev/env/android
-PATH=$JAVA_HOME/bin:$PATH:/usr/lib/go-1.7/bin:$GOROOT/bin:$GOPATH/bin:$MAVEN_HOME/bin
-PATH=$PATH:$ANDROID_HOME/tools
+#PATH=$JAVA_HOME/bin:$PATH:/usr/lib/go-1.7/bin:$GOROOT/bin:$GOPATH/bin:$MAVEN_HOME/bin
+PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$GOROOT/bin:$PATH
+PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin
 PERL5LIB=~/Desktop/perl/mylib:$PERL5LIB
 PYDEVDIR=$HOME/dev/ide/workspaces/pycharm
-export JAVA_HOME PATH PERL5LIB GOPATH GOROOT PYDEVDIR ANDROID_HOME
+export JAVA_HOME ANDROID_HOME PATH PERL5LIB PYDEVDIR GOPATH
+export PATH=/opt/cabal/2.4/bin:/opt/ghc/8.6.1/bin:$PATH
 
 # my alias
 alias cl=clear
